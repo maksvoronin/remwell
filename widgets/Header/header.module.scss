@@ -1,0 +1,121 @@
+@import "@/variables.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+
+  .linksContainer {
+    display: flex;
+    width: 100%;
+  }
+
+  .links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  @media (max-width: $tableWidth) {
+    .linksContainer {
+      height: 0;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: calc(100vw - 40px);
+      left: 40px;
+      top: 100px;
+      background: white;
+      transition: height 0.3s;
+      overflow: hidden;
+      &.opennedLinksContainer {
+        height: calc(100vh - 100px);
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        a {
+          font-size: 16px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .openMobileMenu {
+    right: 10px;
+    top: 20px;
+    width: 32px;
+    height: 22px;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    @media (max-width: $tableWidth) {
+      display: flex;
+    }
+
+    &:hover .fl {
+      margin-left: 14px;
+    }
+
+    &:hover .tl {
+      margin-left: 0px;
+    }
+
+    span {
+      width: 32px;
+      border: 1px solid $foreground;
+      background-color: $foreground;
+      display: block;
+      position: relative;
+      transition: margin 0.2s, transform 0.5s;
+    }
+
+    .fl {
+      width: 18px;
+    }
+
+    .tl {
+      width: 18px;
+      margin-left: 14px;
+    }
+
+    &.activeMobileMenu {
+      transform: rotate(360deg);
+      margin-top: 10px;
+    }
+
+    &.activeMobileMenu .sl {
+      display: none;
+    }
+
+    &.activeMobileMenu .fl {
+      width: 32px;
+      transform: rotate(45deg);
+    }
+
+    &.activeMobileMenu .tl {
+      width: 32px;
+      transform: rotate(-45deg);
+      margin-top: -10px;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+
+    &.activeMobileMenu:hover .fl {
+      margin-left: 0px;
+    }
+
+    &.activeMobileMenu:hover .tl {
+      margin-left: 0px;
+    }
+  }
+}

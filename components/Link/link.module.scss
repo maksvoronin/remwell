@@ -1,0 +1,39 @@
+@import "@/variables.scss";
+
+.customLink {
+  display: block;
+  opacity: 0.7;
+  font-weight: 500;
+  transition: opacity 0.2s;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: 0.4s -webkit-transform;
+    transition: 0.4s transform;
+    transform-origin: 100% 0;
+    background: $foreground;
+    opacity: 0.9;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    z-index: 333;
+  }
+
+  &:hover {
+    opacity: 1;
+    &::after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+      transform-origin: left;
+    }
+  }
+}
