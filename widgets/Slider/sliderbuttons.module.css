@@ -1,0 +1,24 @@
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 999;
+  width: 20px;
+  height: 20px;
+  background: black;
+  right: 0;
+  top: 50%;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #fff;
+  content: "❯";
+  font-size: 24px;
+  text-align: center;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}

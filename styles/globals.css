@@ -2,7 +2,7 @@
   --background: #fff;
   --foreground: #21283a;
   --accentColor: #0085ff;
-  --tableWidth: 768px;
+  --tableWidth: 812px;
   --mobileWidth: 480px;
 }
 * {
@@ -36,4 +36,44 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 999;
+  width: 20px;
+  height: 20px;
+  top: calc(50% - 10px);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+.swiper-button-next {
+  right: 25px;
+}
+.swiper-button-prev {
+  left: 25px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #fff;
+  content: "❯";
+  font-size: 24px;
+  text-align: center;
+}
+
+.swiper-button-prev::after {
+  content: "❮";
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
 }

@@ -5,10 +5,12 @@
   align-items: center;
   justify-content: space-between;
   background: white;
+  font-weight: 300;
 
   .linksContainer {
     display: flex;
     width: 100%;
+    z-index: 9999;
   }
 
   .links {
@@ -26,11 +28,11 @@
       flex-direction: column;
       gap: 25px;
       width: calc(100vw - 40px);
-      left: 40px;
       top: 100px;
       background: white;
       transition: height 0.3s;
       overflow: hidden;
+      padding-left: 20px;
       &.opennedLinksContainer {
         height: calc(100vh - 100px);
       }
