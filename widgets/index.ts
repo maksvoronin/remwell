@@ -6,3 +6,4 @@ export { default as SponsorsBlock } from "./SponsorsBlock/SponsorsBlock";
 export { default as ContactBlock } from "./ContactBlock/ContactBlock";
 export { default as AboutBlock } from "./AboutBlock/AboutBlock";
 export { default as NormativeDocsBlock } from "./NormativeDocsBlock/NormativeDocsBlock";
+export { default as Footer } from "./Footer/Footer";

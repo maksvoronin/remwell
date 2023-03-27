@@ -1,6 +1,7 @@
 import {
   AboutBlock,
   ContactBlock,
+  Footer,
   Header,
   NormativeDocsBlock,
   RemwellBlock,
@@ -27,6 +28,7 @@ export default function Home() {
       <ContactBlock />
       <AboutBlock />
       <NormativeDocsBlock />
+      <Footer />
     </>
   );
 }
