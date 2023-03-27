@@ -1,0 +1,8 @@
+@import "@/variables.scss";
+
+.textlink {
+  color: $accentColor;
+  &:hover {
+    text-decoration: underline;
+  }
+}
