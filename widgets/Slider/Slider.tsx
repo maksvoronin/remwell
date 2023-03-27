@@ -13,10 +13,8 @@ const Slider: FC = () => {
     <Swiper
       slidesPerView={1}
       className={`${s.slider} ${montserrat.className}`}
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation]}
       navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
     >
       <SwiperSlide
         style={{ backgroundImage: `url(/head_1.png)` }}

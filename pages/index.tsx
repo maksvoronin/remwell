@@ -1,4 +1,4 @@
-import { Header, Slider } from '@/widgets'
+import { Header, RemwellBlock, Slider } from '@/widgets'
 import Head from 'next/head'
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
       </Head>
       <Header />
       <Slider />
+      <RemwellBlock />
     </>
   )
 }

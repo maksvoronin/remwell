@@ -9,7 +9,7 @@ const Header: FC = () => {
   const [opennedMenu, setOpennedMenu] = useState<boolean>(false);
   return (
     <header className={`${s.header} ${montserrat.className}`}>
-      <Logotype />
+      <Logotype width={76} height={60} />
       <div className={`${s.linksContainer} ${opennedMenu && s.opennedLinksContainer}`}>
         <div className={s.links}>
           <Link href="/">Главная</Link>

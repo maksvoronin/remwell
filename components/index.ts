@@ -1,2 +1,3 @@
 export { default as Logotype } from "./Logotype/Logotype";
 export { default as Link } from "./Link/Link";
+export { default as Container } from "./Container/Container";
