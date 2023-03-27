@@ -1,4 +1,4 @@
-import { Header, RemwellBlock, ServiceSlider, Slider, SponsorsBlock } from '@/widgets'
+import { ContactBlock, Header, RemwellBlock, ServiceSlider, Slider, SponsorsBlock } from '@/widgets'
 import Head from 'next/head'
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
       <RemwellBlock />
       <ServiceSlider />
       <SponsorsBlock />
+      <ContactBlock />
     </>
   )
 }
