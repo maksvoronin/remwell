@@ -1,10 +1,9 @@
 import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "./sliderbuttons.module.css";
 import s from "./slider.module.scss";
 import { Montserrat } from "next/font/google";
-import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
+import { Navigation } from "swiper";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
