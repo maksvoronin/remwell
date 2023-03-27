@@ -4,3 +4,4 @@ export { default as RemwellBlock } from "./RemwellBlock/RemwellBlock";
 export { default as ServiceSlider } from "./ServicesBlock/ServiceSlider";
 export { default as SponsorsBlock } from "./SponsorsBlock/SponsorsBlock";
 export { default as ContactBlock } from "./ContactBlock/ContactBlock";
+export { default as AboutBlock } from "./AboutBlock/AboutBlock";

@@ -1,5 +1,13 @@
-import { ContactBlock, Header, RemwellBlock, ServiceSlider, Slider, SponsorsBlock } from '@/widgets'
-import Head from 'next/head'
+import {
+  AboutBlock,
+  ContactBlock,
+  Header,
+  RemwellBlock,
+  ServiceSlider,
+  Slider,
+  SponsorsBlock,
+} from "@/widgets";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -16,6 +24,7 @@ export default function Home() {
       <ServiceSlider />
       <SponsorsBlock />
       <ContactBlock />
+      <AboutBlock />
     </>
-  )
+  );
 }
