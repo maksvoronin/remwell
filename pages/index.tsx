@@ -2,6 +2,7 @@ import {
   AboutBlock,
   ContactBlock,
   Header,
+  NormativeDocsBlock,
   RemwellBlock,
   ServiceSlider,
   Slider,
@@ -25,6 +26,7 @@ export default function Home() {
       <SponsorsBlock />
       <ContactBlock />
       <AboutBlock />
+      <NormativeDocsBlock />
     </>
   );
 }

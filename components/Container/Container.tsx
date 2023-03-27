@@ -5,7 +5,7 @@ import s from "./container.module.scss";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 const Container: FC<PropsWithChildren<{className?: string}>> = ({ className, children }) => {
-  return <div className={`${s.container} ${className} ${montserrat.className}`}>{children}</div>;
+  return <div className={`${s.container} ${className ? className : ""} ${montserrat.className}`}>{children}</div>;
 };
 
 export default Container;
