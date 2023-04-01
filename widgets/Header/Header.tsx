@@ -1,14 +1,11 @@
 import { Link, Logotype } from "@/components";
 import s from "./header.module.scss";
-import { Montserrat } from "next/font/google";
 import { FC, useState } from "react";
-
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 const Header: FC = () => {
   const [opennedMenu, setOpennedMenu] = useState<boolean>(false);
   return (
-    <header className={`${s.header} ${montserrat.className}`}>
+    <header className={`${s.header}`}>
       <Logotype width={76} height={60} />
       <div className={`${s.linksContainer} ${opennedMenu && s.opennedLinksContainer}`}>
         <div className={s.links}>

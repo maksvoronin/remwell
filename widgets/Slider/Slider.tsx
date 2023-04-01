@@ -2,16 +2,14 @@ import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import s from "./slider.module.scss";
-import { Montserrat } from "next/font/google";
 import { Navigation } from "swiper";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 const Slider: FC = () => {
   return (
     <Swiper
       slidesPerView={1}
-      className={`${s.slider} ${montserrat.className}`}
+      className={`${s.slider}`}
       modules={[Navigation]}
       navigation
     >
