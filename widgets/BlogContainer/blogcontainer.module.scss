@@ -1,0 +1,11 @@
+.blogContainer {
+  h1 {
+    margin-bottom: 12px;
+  }
+
+  .blogPosts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

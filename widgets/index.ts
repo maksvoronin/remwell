@@ -7,3 +7,4 @@ export { default as ContactBlock } from "./ContactBlock/ContactBlock";
 export { default as AboutBlock } from "./AboutBlock/AboutBlock";
 export { default as NormativeDocsBlock } from "./NormativeDocsBlock/NormativeDocsBlock";
 export { default as Footer } from "./Footer/Footer";
+export { default as BlogContainer } from "./BlogContainer/BlogContainer"

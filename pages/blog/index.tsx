@@ -1,4 +1,4 @@
-import { Footer, Header } from "@/widgets";
+import { BlogContainer, Footer, Header } from "@/widgets";
 import Head from "next/head";
 
 export default function Blog() {
@@ -8,6 +8,7 @@ export default function Blog() {
         <title>Блог / Ремвелл</title>
       </Head>
       <Header />
+      <BlogContainer />
       <Footer />
     </>
   )
