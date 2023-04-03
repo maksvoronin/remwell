@@ -13,6 +13,7 @@
   margin: 0;
   color: var(--foreground);
   font-family: "Montserrat", sans-serif;
+  outline: none;
 }
 
 html,

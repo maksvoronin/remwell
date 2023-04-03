@@ -1,0 +1,64 @@
+@import "@/variables.scss";
+
+.feedbackForm {
+  h1,
+  p {
+    text-align: center;
+  }
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 32px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    textarea {
+      width: 100%;
+      border-radius: 8px;
+      font-size: 15px;
+      line-height: 1.67;
+      margin-top: 40px;
+      min-height: 260px;
+      outline: none;
+      padding: 20px;
+      resize: vertical;
+      background: #f7f7f7;
+      border: none;
+    }
+
+    .contacts {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      input, select, button {
+        width: 32%;
+        height: 46px;
+        border-radius: 8px;
+        border: none;
+        background: #f7f7f7;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      input, select {
+        padding-left: 15px;
+      }
+
+      input {
+        cursor: text;
+      }
+
+      button {
+        background: $accentColor;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { Footer, Header } from "@/widgets";
+import { FeedbackForm, Footer, Header, Slider } from "@/widgets";
 import Head from "next/head";
 
 export default function Feedback() {
@@ -8,6 +8,8 @@ export default function Feedback() {
         <title>Отзывы / Ремвелл</title>
       </Head>
       <Header />
+      <Slider />
+      <FeedbackForm />
       <Footer />
     </>
   );
