@@ -6,7 +6,7 @@ const schema = new Schema({
   author: String,
   description: String,
   link: String,
-  date: Number,
+  date: {type: Number, default: Date.now()},
   text: String,
 });
 
