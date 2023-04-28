@@ -7,7 +7,7 @@ export default async function handler(
   res: NextApiResponse<BlogResponse[] | ErrorResponse>
 ) {
   const { title, author, description, link, date, text } = req.body;
-  if (!title || !author || description || !link || !text)
+  if (!title || !author || !description || !link || !text)
     return res
       .status(500)
       .json({
@@ -18,6 +18,6 @@ export default async function handler(
   return res
     .status(201)
     .json(
-      await blogModel.create({ title, author, description, link, date, text })
+      await blogModel.create({ title, author, description, link, date: date || Date.now(), text })
     );
 }

@@ -22,6 +22,7 @@ export default async function handler(
   if (author) post.author = author;
   if (description) post.description = description;
   if (link) post.link = link;
+  if (date) post.date = date;
   if (text) post.text = text;
   await post.save();
   return res.status(201).json(post);
