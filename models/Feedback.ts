@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import mongoose, { Schema, model } from "mongoose";
 
 const schema = new Schema({
   id: Number,
@@ -7,4 +7,4 @@ const schema = new Schema({
   text: String,
 });
 
-export default model("feedback", schema);
+export default mongoose.models.feedback || model("feedback", schema);

@@ -11,7 +11,7 @@ import {
 } from "@/widgets";
 import Head from "next/head";
 
-export default function Home() {
+export default function home() {
   return (
     <>
       <Head>

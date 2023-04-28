@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import mongoose, { Schema, model } from "mongoose";
 
 const schema = new Schema({
   id: Number,
@@ -10,4 +10,4 @@ const schema = new Schema({
   text: String,
 });
 
-export default model("blog", schema);
+export default mongoose.models.blog || model("blog", schema);

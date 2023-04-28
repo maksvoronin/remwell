@@ -1,7 +1,9 @@
 import { FeedbackForm, Footer, Header, Slider } from "@/widgets";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 
-export default function Feedback() {
+export default function feedback() {
+   
   return (
     <>
       <Head>
@@ -10,6 +12,7 @@ export default function Feedback() {
       <Header />
       <Slider />
       <FeedbackForm />
+
       <Footer />
     </>
   );

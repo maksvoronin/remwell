@@ -1,16 +1,11 @@
+import {feedbackModel} from "@/models";
+import { FeedbackResponse } from "@/types";
 import { NextApiRequest, NextApiResponse } from "next";
 
-type FeedbackResponse = {
-  title: string;
-  author: string;
-  description: string;
-  link: string;
-  date: number;
-  text: string;
-}
-
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<FeedbackResponse>
+  res: NextApiResponse<FeedbackResponse[]>
 ) {
+  const feedbacks: FeedbackResponse[] = await feedbackModel.find({}, {__v: 0});
+  return res.json(feedbacks);
 }

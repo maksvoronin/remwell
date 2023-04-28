@@ -1,2 +1,2 @@
-export { default as Feedback } from "./Feedback";
-export { default as Blog } from "./Blog";
+export { default as feedbackModel } from "./Feedback";
+export { default as blogModel } from "./Blog";
