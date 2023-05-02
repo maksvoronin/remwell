@@ -35,6 +35,10 @@
       display: flex;
       justify-content: space-between;
       margin-top: 30px;
+      @media(max-width: 480px) {
+        flex-direction: column;
+        gap: 30px;
+      }
 
       input, select, button {
         width: 32%;
@@ -45,6 +49,9 @@
         font-size: 15px;
         font-weight: 500;
         cursor: pointer;
+        @media(max-width: 480px) {
+          width: 100%;
+        }
       }
 
       input, select {
