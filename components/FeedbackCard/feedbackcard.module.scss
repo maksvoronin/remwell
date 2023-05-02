@@ -1,0 +1,25 @@
+.feedbackCard {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0px 5px 24px #ececec;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  span {
+    background-color: #f1f2f3;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 32px;
+    border-radius: 50%;
+    color: rgb(132, 150, 167);
+  }
+}

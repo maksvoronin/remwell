@@ -9,3 +9,4 @@ export { default as NormativeDocsBlock } from "./NormativeDocsBlock/NormativeDoc
 export { default as Footer } from "./Footer/Footer";
 export { default as BlogContainer } from "./BlogContainer/BlogContainer";
 export { default as FeedbackForm } from "./FeedbackForm/FeedbackForm";
+export { default as FeedbackContainer } from "./FeedbackContainer/FeedbackContainer";
