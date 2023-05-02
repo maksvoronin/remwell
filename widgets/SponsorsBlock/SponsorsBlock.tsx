@@ -4,7 +4,7 @@ import s from "./sponsorsblock.module.scss";
 
 const SponsorsBlock: FC = () => {
   return (
-    <Container className={s.sponsorsBlock}>
+    <Container className={s.sponsorsBlock} id={"sponsors"}>
       <h1>Поставщикам</h1>
       <p>
         Компания «РЕМВЕЛЛ» готова к сотрудничеству в части закупок как запасных

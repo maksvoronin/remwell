@@ -5,7 +5,7 @@ import s from "./remwellblock.module.scss";
 
 const RemwellBlock: FC = () => {
   return (
-    <Container className={`${s.remwellBlock}`}>
+    <Container className={`${s.remwellBlock}`} id={"remwell"}>
       <div className={s.texts}>
         <h1>РЕМВЕЛЛ</h1>
         <p>

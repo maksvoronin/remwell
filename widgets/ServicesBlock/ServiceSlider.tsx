@@ -5,7 +5,7 @@ import data from "@/services.json";
 
 const ServiceSlider: FC = () => {
   return (
-    <Container className={s.services}>
+    <Container className={s.services} id={"services"}>
       <h1>Перечень наших услуг</h1>
       <p>В число ремонтируемых приборов входит</p>
       <div className={s.servicesList}>

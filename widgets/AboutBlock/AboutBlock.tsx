@@ -4,7 +4,7 @@ import s from "./aboutblock.module.scss";
 
 const AboutBlock: FC = () => {
   return (
-    <Container className={s.aboutBlock}>
+    <Container className={s.aboutBlock} id={"about"}>
       <h1>О компании</h1>
       <p>
         Компания «РЕМВЕЛЛ» отличается максимально гибким подходом к каждому

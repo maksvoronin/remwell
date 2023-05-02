@@ -1,6 +1,7 @@
 import { Link, Logotype } from "@/components";
 import s from "./header.module.scss";
 import { FC, useState } from "react";
+import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 
 const Header: FC = () => {
   const [opennedMenu, setOpennedMenu] = useState<boolean>(false);
@@ -10,17 +11,20 @@ const Header: FC = () => {
       <div className={`${s.linksContainer} ${opennedMenu && s.opennedLinksContainer}`}>
         <div className={s.links}>
           <Link href="/">Главная</Link>
-          <Link href="/">Услуги</Link>
-          <Link href="/">Поставщикам</Link>
+          <Link href="/#services" onClick={() => scroll.scrollMore(document.querySelector('#services')!.getBoundingClientRect().top - 50)}>Услуги</Link>
+          <Link href="/#sponsors" onClick={() => scroll.scrollMore(document.querySelector('#sponsors')!.getBoundingClientRect().top - 50)}>Поставщикам</Link>
           <Link href="/feedback">Отзывы</Link>
-          <Link href="/">Контакты</Link>
-          <Link href="/">О компании</Link>
+          <Link href="/contacts" onClick={() => scroll.scrollMore(document.querySelector('#contacts')!.getBoundingClientRect().top - 50)}>Контакты</Link>
+          <Link href="/#about" onClick={() => scroll.scrollMore(document.querySelector('#about')!.getBoundingClientRect().top - 50)}>О компании</Link>
         </div>
         <div className={s.links}>
           <Link href="/blog">Блог</Link>
         </div>
       </div>
-      <div className={`${s.openMobileMenu} ${opennedMenu && s.activeMobileMenu}`} onClick={() => setOpennedMenu(!opennedMenu)}>
+      <div
+        className={`${s.openMobileMenu} ${opennedMenu && s.activeMobileMenu}`}
+        onClick={() => setOpennedMenu(!opennedMenu)}
+      >
         <span className={s.fl}></span>
         <span className={s.sl}></span>
         <span className={s.tl}></span>

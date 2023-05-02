@@ -3,7 +3,7 @@ import { FC } from "react";
 import s from "./contactblock.module.scss";
 
 const ContactBlock: FC = () => {
-  return <Container className={s.contactBlock}>
+  return <Container className={s.contactBlock} id={"contacts"}>
     <h1>Контакты</h1>
     <p>
       Адрес: Белово, ул. Кузбасская д. 10/1<br/>
