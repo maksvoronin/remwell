@@ -1,0 +1,21 @@
+@import "@/variables.scss";
+
+.loginForm {
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 320px;
+  justify-content: center;
+  align-items: center;
+  input {
+    padding-left: 15px;
+    width: calc(100% - 15px);
+  }
+  button {
+    width: calc(100% - 15px);
+    background: $accentColor;
+    color: white;
+  }
+}

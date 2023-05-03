@@ -11,3 +11,4 @@ export { default as BlogContainer } from "./BlogContainer/BlogContainer";
 export { default as FeedbackForm } from "./FeedbackForm/FeedbackForm";
 export { default as FeedbackContainer } from "./FeedbackContainer/FeedbackContainer";
 export { default as PostContainer } from "./PostContainer/PostContainer";
+export { default as LoginForm } from "./LoginForm/LoginForm";
