@@ -8,10 +8,11 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<AuthResponse | ErrorResponse>
 ) {
-  const { name, login, password } = req.body;
+  const { token } = req.query;
 
-  if(!name || !login || !password) return res.status(500).json({code: 1, text: "Incorrect post data", prompt: "Check sent post data"} as ErrorResponse);
+  if(!token) return res.status(500).json({code: 1, text: "Incorrect post data", prompt: "Check sent post data"} as ErrorResponse);
 
-  const admin = await adminModel.create({name, login, password: await hash(password, 3), token: v4()});
+  const admin = await adminModel.findOne({token});
+  if(!admin) return res.status(404).json({code: 3, text: "Admin not found", prompt: "Check token"} as ErrorResponse);
   return res.status(201).json(admin);
 }
