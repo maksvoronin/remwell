@@ -1,7 +1,7 @@
 import { Link, Logotype } from "@/components";
 import s from "./header.module.scss";
 import { FC, useState } from "react";
-import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 const Header: FC = () => {
   const [opennedMenu, setOpennedMenu] = useState<boolean>(false);
@@ -20,7 +20,7 @@ const Header: FC = () => {
           <Link href="/#services" onClick={() => scrollToElement("#services")}>Услуги</Link>
           <Link href="/#sponsors" onClick={() => scrollToElement("#sponsors")}>Поставщикам</Link>
           <Link href="/feedback">Отзывы</Link>
-          <Link href="/contacts" onClick={() => scrollToElement("#contacts")}>Контакты</Link>
+          <Link href="/#contacts" onClick={() => scrollToElement("#contacts")}>Контакты</Link>
           <Link href="/#about" onClick={() => scrollToElement("#about")}>О компании</Link>
         </div>
         <div className={s.links}>

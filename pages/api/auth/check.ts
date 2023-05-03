@@ -1,8 +1,6 @@
 import { adminModel } from "@/models";
 import { AuthResponse, ErrorResponse } from "@/types";
 import { NextApiRequest, NextApiResponse } from "next";
-import { v4 } from "uuid";
-import {hash} from "bcrypt";
 
 export default async function handler(
   req: NextApiRequest,
