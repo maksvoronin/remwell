@@ -2,6 +2,7 @@ import { FC, useEffect } from "react";
 import s from "./adminsidebar.module.scss";
 import Logotype from "../Logotype/Logotype";
 import { useRouter } from "next/router";
+import { Link } from "..";
 
 const AdminSidebar: FC = () => {
 
@@ -28,6 +29,8 @@ const AdminSidebar: FC = () => {
       <button onClick={() => router.push("/admin/blog")}>Блог</button>
       <button onClick={() => router.push("/admin/feedback")}>Отзывы</button>
       <button onClick={() => router.push("/admin/users")}>Пользователи</button>
+      <hr />
+      <button onClick={() => router.push("/")}>На сайт</button>
     </div>
   </div>
 }
