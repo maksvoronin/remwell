@@ -1,3 +1,7 @@
+import { AdminLayout } from "@/components";
+
 export default function Dashboard() {
-  return <></>
+  return <AdminLayout title="Панель управления">
+    
+  </AdminLayout>;
 }

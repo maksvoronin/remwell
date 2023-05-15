@@ -5,3 +5,5 @@ export { default as TextLink } from "./TextLink/TextLink";
 export { default as Preload } from "./Preload/Preload";
 export { default as BlogCard } from "./BlogCard/BlogCard";
 export { default as FeedbackCard } from "./FeedbackCard/FeedbackCard";
+export { default as AdminSidebar } from "./AdminSidebar/AdminSidebar";
+export { default as AdminLayout } from "./AdminLayout/AdminLayout";
