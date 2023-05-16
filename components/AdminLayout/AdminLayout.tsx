@@ -10,7 +10,7 @@ const AdminLayout: FC<PropsWithChildren<{title: string}>> = ({ children, title }
         <title>{title}</title>
       </Head>
       <AdminSidebar />
-      <div>
+      <div className={s.adminContent}>
         {children}
       </div>
     </div>

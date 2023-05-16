@@ -13,3 +13,4 @@ export { default as FeedbackContainer } from "./FeedbackContainer/FeedbackContai
 export { default as PostContainer } from "./PostContainer/PostContainer";
 export { default as LoginForm } from "./LoginForm/LoginForm";
 export { default as DashboardStat } from "./DashboardStat/DashboardStat";
+export { default as DashboardController } from "./DashboardController/DashboardController";
