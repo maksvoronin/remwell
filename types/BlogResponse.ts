@@ -5,4 +5,5 @@ export default interface BlogResponse {
   link: string;
   date: number;
   text: string;
+  _id?: string;
 }
