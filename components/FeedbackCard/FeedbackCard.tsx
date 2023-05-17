@@ -1,13 +1,14 @@
-import { FC } from "react";
+import { FC, MouseEventHandler } from "react";
 import s from "./feedbackcard.module.scss";
 
 const FeedbackCard: FC<{
   name: string;
   score: number;
   text: string;
-}> = ({ name, score, text }) => {
+  onClick?: MouseEventHandler<HTMLDivElement>;
+}> = ({ name, score, text, onClick }) => {
   return (
-    <div className={s.feedbackCard}>
+    <div className={s.feedbackCard} onClick={onClick}>
       <span>{score}</span>
       <h1>{name}</h1>
       <p>{text}</p>
