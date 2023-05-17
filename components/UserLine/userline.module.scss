@@ -1,0 +1,21 @@
+.userLine {
+  display: flex;
+  height: 44px;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  padding-bottom: 20px;
+  button {
+    background-color: white;
+    border: 1px solid #eee;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: #f7f7f7;
+    }
+  }
+}

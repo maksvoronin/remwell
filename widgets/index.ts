@@ -18,3 +18,5 @@ export { default as BlogController } from "./BlogController/BlogController";
 export { default as BlogManager } from "./BlogManager/BlogManager";
 export { default as BlogEdit } from "./BlogEdit/BlogEdit";
 export { default as BlogCreate } from "./BlogCreate/BlogCreate";
+export { default as UsersController } from "./UsersController/UsersController";
+export { default as UserCreate } from "./UserCreate/UserCreate";

@@ -9,3 +9,4 @@ export { default as AdminSidebar } from "./AdminSidebar/AdminSidebar";
 export { default as AdminLayout } from "./AdminLayout/AdminLayout";
 export { default as DashboardControllerButton } from "./DashboardControllerButton/DashboardControllerButton";
 export { default as BlogManagerCard } from "./BlogManagerCard/BlogManagerCard";
+export { default as UserLine } from "./UserLine/UserLine";
