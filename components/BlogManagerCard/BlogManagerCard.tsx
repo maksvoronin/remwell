@@ -17,7 +17,7 @@ const BlogManagerCard: FC<{
     <p>{description}</p>
     <p>{author}</p>
     <p>{link}</p>
-    <button onClick={() => router.push(`/admin/blog/${id}`)}>Изменить</button>
+    <button onClick={() => router.push(`/admin/blog/${link}`)}>Изменить</button>
   </div>;
 };
 

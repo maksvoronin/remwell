@@ -16,3 +16,5 @@ export { default as DashboardStat } from "./DashboardStat/DashboardStat";
 export { default as DashboardController } from "./DashboardController/DashboardController";
 export { default as BlogController } from "./BlogController/BlogController";
 export { default as BlogManager } from "./BlogManager/BlogManager";
+export { default as BlogEdit } from "./BlogEdit/BlogEdit";
+export { default as BlogCreate } from "./BlogCreate/BlogCreate";
