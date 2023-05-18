@@ -6,7 +6,22 @@ const UserCreate = () => {
   const [login, setLogin] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
-  const createUser = () => {};
+  const createUser = () => {
+    fetch("/api/auth/register",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          name, login, password, token: window.localStorage.token
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+    ).then(r => r.json()).then(response => {
+      if(response.code) return alert("Произошла ошибка");
+      return alert("Пользователь создан")
+    })
+  };
 
   return (
     <div className={s.userCreate}>
@@ -32,7 +47,7 @@ const UserCreate = () => {
       />
 
       <button className={s.save} onClick={createUser}>
-        Опубликовать
+        Создать аккаунт
       </button>
     </div>
   );
