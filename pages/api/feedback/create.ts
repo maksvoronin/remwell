@@ -7,22 +7,13 @@ export default async function handler(
   res: NextApiResponse<ErrorResponse | FeedbackResponse>
 ) {
   const { name, score, text, token } = req.body;
-  if (!name || !score || !text || !token)
+  if (!name || !score || !text)
     return res
       .status(500)
       .json({
         code: 1,
         text: "Incorrect post data",
         prompt: "Check sent post data",
-      } as ErrorResponse);
-  const admin = await adminModel.findOne({ token });
-  if (!admin)
-    return res
-      .status(404)
-      .json({
-        code: 3,
-        text: "Admin not found",
-        prompt: "Check token",
       } as ErrorResponse);
   return res
     .status(201)
